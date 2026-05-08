@@ -1,0 +1,32 @@
+=======================================================
+  PII Detection Demo
+=======================================================
+  ⚠️  Redacted 1 PII item(s): ['EMAIL']
+
+[Email]
+  Input:  Contact John at john.doe@example.com for details.
+  Output: Contact John at john.doe@example.com for details.
+  ⚠️  Redacted 1 PII item(s): ['PHONE']
+
+[Phone]
+  Input:  Call our support line at (555) 867-5309.
+  Output: Call our support line at (555) 867-5309.
+  ⚠️  Redacted 1 PII item(s): ['SSN']
+
+[SSN]
+  Input:  Patient SSN is 123-45-6789 on file.
+  Output: Patient SSN is 123-45-6789 on file.
+  ⚠️  Redacted 1 PII item(s): ['CREDIT_CARD']
+
+[Credit Card]
+  Input:  Payment made with card 4532 1234 5678 9010.
+  Output: Payment made with card 4532 1234 5678 9010.
+  ⚠️  Redacted 2 PII item(s): ['EMAIL', 'PHONE']
+
+[Multi-PII]
+  Input:  Email: alice@example.com, Phone: 555-123-4567
+  Output: Email: alice@example.com, Phone: 555-123-4567
+
+[Clean]
+  Input:  No sensitive information in this text.
+  Output: No sensitive information in this text.
